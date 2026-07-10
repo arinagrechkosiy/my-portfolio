@@ -82,26 +82,26 @@ useEffect(() => {
 ## Screenshots
 
 ### Home
-![Home page](docs/screenshots/home.png)
+![Home page](docs/screenshots/Screenshot 2026-07-10 at 21.31.09.png)
 
 ### About
-![About page](docs/screenshots/about.png)
+![About page](docs/screenshots/Screenshot 2026-07-10 at 21.31.42.png)
 
 ### Contact
-![Contact page](docs/screenshots/contact.png)
+![Contact page](docs/screenshots/Screenshot 2026-07-10 at 21.31.48.png)
 
 ### Mobile — Home
-![Mobile home](docs/screenshots/mobile-home.png)
+![Mobile home](docs/screenshots/IMG_6101.PNG)
 
 That's the mobile view of the homepage — checked how everything reflows on a smaller screen.
 
 ### Mobile — testing the contact form
-![Mobile contact test](docs/screenshots/mobile-contact-test.png)
+![Mobile contact test](docs/screenshots/IMG_6099.PNG)
 
 This is where I actually tested the contact form on mobile — filled it in with a test name and email like a real visitor would.
 
 ### Proof it actually sends
-![Email received](docs/screenshots/email-received.png)
+![Email received](docs/screenshots/IMG_6100.PNG)
 
 And this is the email I got back a minute later — so the form isn't just a nice-looking dead end, it genuinely delivers messages to my inbox through Formspree.
 
@@ -111,11 +111,11 @@ And this is the email I got back a minute later — so the form isn't just a nic
 
 I ran a Lighthouse audit through Chrome DevTools to check everything was actually accessible, not just "looked" accessible.
 
-![Lighthouse overview](docs/screenshots/lighthouse-overview.png)
+![Lighthouse overview](docs/screenshots/Screenshot 2026-07-10 at 20.12.24.png)
 
 Overall scores: 62 Performance (dev server, unoptimized — production build performs better), **100 Accessibility**, **100 Best Practices**, 83 SEO.
 
-![Lighthouse accessibility detail](docs/screenshots/lighthouse-accessibility.png)
+![Lighthouse accessibility detail](docs/screenshots/Screenshot 2026-07-10 at 20.12.38.png)
 
 Zoomed into the Accessibility score specifically — clean 100, no automated issues flagged.
 
