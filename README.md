@@ -1,4 +1,4 @@
-# Hi, I'm Arina 👋
+# Hi, I'm Arina Grechkosii
 
 This is my personal portfolio site, built for my Front-End Programming final project. It's a place to introduce myself, talk about what I'm into, and let people actually reach me through a contact form that works — not just a fake "message sent!" popup.
 
