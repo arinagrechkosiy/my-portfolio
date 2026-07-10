@@ -1,6 +1,6 @@
-# Hi, I'm Arina Grechkosii
+# Hi, I'm Arina Grecgkosii
 
-This is my personal portfolio site, built for my Front-End Programming final project. It's a place to introduce myself, talk about what I'm into, and let people actually reach me through a contact form that works — not just a fake "message sent!" popup.
+This is my personal portfolio site, built for my Front-End Programming final project. It's a place to introduce myself, talk about what I'm into, and let people actually reach me through a contact form that works - not just a fake "message sent!" popup.
 
 **Live site:** https://my-portfolio-phi-pink-74.vercel.app
 **Repo:** https://github.com/arinagrechkosiy/my-portfolio
@@ -13,7 +13,7 @@ I started with a plain yellow background — bold, high-contrast, very "editoria
 
 Then dark mode happened. Once I built the toggle, I realized the swirl image I'd made for light mode looked wrong against a dark background — the colors just didn't work anymore. So I ended up creating a second version of the background image specifically for dark mode, and swapping between the two depending on which theme is active. Small detail, but it took a bit of trial and error to get right.
 
-The contact form was the part I cared about most — I didn't want it to just pretend to send a message. It's actually wired up through **Formspree**, so when someone fills it out and hits submit, I genuinely get an email. I tested it myself a bunch of times to make sure it wasn't just a nice-looking dead end.
+The contact form was the part I cared about most — I didn't want it to just pretend to send a message. It's actually wired up through **Formspree**, so when someone fills it out and hits submit, I genuinely get an email. I tested it myself a bunch of times, including from my phone, to make sure it wasn't just a nice-looking dead end.
 
 ---
 
@@ -90,13 +90,34 @@ useEffect(() => {
 ### Contact
 ![Contact page](docs/screenshots/contact.png)
 
-### Mobile
-![Mobile view](docs/screenshots/mobile.png)
+### Mobile — Home
+![Mobile home](docs/screenshots/mobile-home.png)
 
-### Accessibility check
-Ran through Chrome DevTools Lighthouse — 100 on Accessibility, 100 on Best Practices.
+That's the mobile view of the homepage — checked how everything reflows on a smaller screen.
 
-![Lighthouse results](docs/screenshots/lighthouse.png)
+### Mobile — testing the contact form
+![Mobile contact test](docs/screenshots/mobile-contact-test.png)
+
+This is where I actually tested the contact form on mobile — filled it in with a test name and email like a real visitor would.
+
+### Proof it actually sends
+![Email received](docs/screenshots/email-received.png)
+
+And this is the email I got back a minute later — so the form isn't just a nice-looking dead end, it genuinely delivers messages to my inbox through Formspree.
+
+---
+
+## Accessibility Audit
+
+I ran a Lighthouse audit through Chrome DevTools to check everything was actually accessible, not just "looked" accessible.
+
+![Lighthouse overview](docs/screenshots/lighthouse-overview.png)
+
+Overall scores: 62 Performance (dev server, unoptimized — production build performs better), **100 Accessibility**, **100 Best Practices**, 83 SEO.
+
+![Lighthouse accessibility detail](docs/screenshots/lighthouse-accessibility.png)
+
+Zoomed into the Accessibility score specifically — clean 100, no automated issues flagged.
 
 ---
 
