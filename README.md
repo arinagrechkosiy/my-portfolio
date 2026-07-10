@@ -82,13 +82,13 @@ useEffect(() => {
 ## Screenshots
 
 ### Home
-![Home page](docs/screenshots/Screenshot 2026-07-10 at 21.31.09.png)
+![Home page](docs/screenshots/Screenshot%202026-07-10%20at%2021.31.09.png)
 
 ### About
-![About page](docs/screenshots/Screenshot 2026-07-10 at 21.31.42.png)
+![About page](docs/screenshots/Screenshot%202026-07-10%20at%2021.31.42.png)
 
 ### Contact
-![Contact page](docs/screenshots/Screenshot 2026-07-10 at 21.31.48.png)
+![Contact page](docs/screenshots/Screenshot%202026-07-10%20at%2021.31.48.png)
 
 ### Mobile — Home
 ![Mobile home](docs/screenshots/IMG_6101.PNG)
@@ -111,11 +111,11 @@ And this is the email I got back a minute later — so the form isn't just a nic
 
 I ran a Lighthouse audit through Chrome DevTools to check everything was actually accessible, not just "looked" accessible.
 
-![Lighthouse overview](docs/screenshots/Screenshot 2026-07-10 at 20.12.24.png)
+![Lighthouse overview](docs/screenshots/Screenshot%202026-07-10%20at%2020.12.24.png)
 
 Overall scores: 62 Performance (dev server, unoptimized — production build performs better), **100 Accessibility**, **100 Best Practices**, 83 SEO.
 
-![Lighthouse accessibility detail](docs/screenshots/Screenshot 2026-07-10 at 20.12.38.png)
+![Lighthouse accessibility detail](docs/screenshots/Screenshot%202026-07-10%20at%2020.12.38.png)
 
 Zoomed into the Accessibility score specifically — clean 100, no automated issues flagged.
 
