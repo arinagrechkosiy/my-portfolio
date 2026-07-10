@@ -9,11 +9,25 @@ This is my personal portfolio site, built for my Front-End Programming final pro
 
 ## How I built this
 
-I started with a plain yellow background — bold, high-contrast, very "editorial poster" vibe. That felt too flat on its own, so I added a hand-drawn-style swirl graphic layered on top as a background image, which gave the hero section some texture and movement.
+## How I built this
 
-Then dark mode happened. Once I built the toggle, I realized the swirl image I'd made for light mode looked wrong against a dark background — the colors just didn't work anymore. So I ended up creating a second version of the background image specifically for dark mode, and swapping between the two depending on which theme is active. Small detail, but it took a bit of trial and error to get right.
+I started by deciding to build the site in **React with Vite**, since that's what the course recommended and it's fast to set up. Everything was built in **VS Code**, running commands through the terminal — `npm create vite@latest`, then `npm install`, then `npm run dev` to get a local dev server going at `localhost:5173` so I could see changes live as I worked.
 
-The contact form was the part I cared about most — I didn't want it to just pretend to send a message. It's actually wired up through **Formspree**, so when someone fills it out and hits submit, I genuinely get an email. I tested it myself a bunch of times, including from my phone, to make sure it wasn't just a nice-looking dead end.
+Once the basic Vite starter was running, I set up the folder structure: a `components` folder for shared pieces like the navigation bar and footer, and a `pages` folder for the actual Home, About, and Contact views. Then I installed `react-router-dom` so the site could switch between pages without full reloads, and wired up the routes in `App.jsx`.
+
+**Design direction first.** Before writing much code, I picked the visual direction — a bold yellow background (`#FFF56E`) with heavy, condensed typography (Anton), going for a high-contrast, editorial poster look rather than a typical soft portfolio aesthetic.
+
+**Building page by page.** I built Home first — the hero section with my name, role, and location, plus a highlights section underneath. Then About, where I uploaded a personal photo (shot in Milan) and wrote a short bio, added skill tags and language tags. Then Contact, which took the most time because of the form logic.
+
+**The background image detour.** Once the yellow background felt too flat on its own, I made a hand-drawn-style swirl graphic and uploaded it as a background image sitting behind the hero text, to add some movement and texture.
+
+**Dark mode.** After building the toggle (state + `localStorage` so it remembers your choice), I noticed the swirl image I'd made for light mode looked wrong against a dark background — the colors just clashed. So I had to go back, create a second version of that image specifically for dark mode, upload it separately, and write logic to swap between the two images depending on which theme is active.
+
+**The contact form.** This was the part I cared about getting right. I didn't want a form that just shows a fake "message sent!" popup and does nothing. I connected it to **Formspree**, so submissions actually get emailed to me. I added client-side validation — required fields, email format checking, minimum message length — with error messages tied to each field so screen readers pick them up correctly. Then I tested it for real: filled it out from my phone with a test name and email, hit send, and confirmed the email actually landed in my inbox.
+
+**Accessibility and responsiveness.** Once the core site was done, I ran a Lighthouse audit in Chrome DevTools to check for accessibility issues — labels, contrast, keyboard navigation — and fixed what came up until I hit a clean 100 on Accessibility and Best Practices. I also checked the site at mobile widths using DevTools' device toolbar and on my actual phone, to make sure nothing broke on a smaller screen.
+
+**Getting it online.** For deployment, I used **Vercel** — mainly because it's built specifically for frontend frameworks like Vite/React, deployment is a single terminal command (`vercel --prod`), and it gives you a live HTTPS link instantly with zero server configuration. For the source code, I set up a **GitHub** repository, since it's the standard way to host and share a project's code, keeps a full history of changes, and is what the assignment specifically asked for as a submission format. Once both were set up, I connected the two so that pushing to GitHub can automatically redeploy the site on Vercel going forward.
 
 ---
 
